@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p>Hello</p>
+
+    <% for (let i = 0; i < messages.length; i++) { %>
+    <li style="background-color: grey">
+      <div class="info" style="display: flex; flex-direction: row">
+        <p><%= messages[i].user %></p>
+        <a href="./new/<%= messages[i].id %>">Open</a>
+      </div>
+
+      <p><%= messages[i].text %></p>
+    </li>
+    <% } %>
+    <a href="/new">Add new</a>
+  </body>
+</html>
